@@ -62,34 +62,55 @@
     padding-right: 28px;
 }
 
-
 .cat-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-card {
     max-width:508px;
     min-height: 199px;
     display: flex;
+    flex-basis: 32.6%;
     justify-content: space-between;
     background-color: var(--secondary-color);
+    border-radius: 23px;
+    border: 1px solid var(--secondary-color);
     
 }
 
 .cat-des {
     display: flex;
     flex-direction: column;
-    flex-basis: 60%;
-    padding-left: 76px;
+    flex-basis: 49%;
     padding-top: 22px;
     justify-content: space-between;
 }
 
+.line {
+    position: relative;
+    left:65%;
+}
+
 .cat-wrap {
     display: flex;
-    flex-basis: 33%;
+    flex-basis: 14%;
     position: relative;
+    filter: drop-shadow(3px 1px 0px white);
+
 }
 .cat-wrap img{
     position: absolute;
     top: 14%;
+    left: -6%;
+    max-width: 116px;
+    min-height: 175px;
 }
+
+.cat1 {
+    line-height: 0.6;
+}
+
 .cat2 {
     display: flex;
     justify-content: space-between;
@@ -115,3 +136,74 @@
     color: #ffffff;
 }
 
+.cat-design {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 55px;
+}
+
+.cat-design2 {
+    max-width: 55px;
+}
+.cat-design2 img {
+    width:100%;
+}
+
+#cat-container > .banner-card:nth-child(2){
+    background-color: var(--primary-color);
+}
+
+#cat-container > .banner-card:nth-child(2) .cat-wrap img {
+    position: absolute;
+    top: 8%;
+    left: -27%;
+    max-width: 121px;
+    min-height: 180px;
+
+}
+
+
+
+.tab-logo {
+    display: flex;
+    margin-bottom: 9px;
+    gap: 7px;
+}
+
+.tab-logo p {
+    display: flex;
+    align-items:center;
+}
+.tab-status {
+    display: grid;
+    gap: 11px;
+}
+
+.tab-box {
+    padding: 11px 22px;
+}
+
+.tab-a {
+    max-width: 189px;
+    min-height: 105px;
+    border: 1px solid black;
+
+}
+
+.booking-tab {
+    min-height: 190px;
+    max-width: 620px;
+    border: 1px solid black;
+}
+
+.booking-title {
+    padding-top: 18px;
+    margin-bottom: 12px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
