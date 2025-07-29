@@ -110,7 +110,7 @@ const tabs = (tabContents, tabContainer)=> {
     })
     container.innerHTML = tabBox;
 }
-tabs(tabData, 'tab-container')
+tabs(tabData, 'tab-container');
 
 
 
