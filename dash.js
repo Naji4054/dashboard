@@ -113,6 +113,46 @@ const tabs = (tabContents, tabContainer)=> {
 tabs(tabData, 'tab-container');
 
 
+const revData = [ 
+    {
+        tabImage :"./assets/amount.png",
+        title :"Total Income",
+        aed :"./assets/amount-aed.png",
+    },    
+        
+    {
+        tabImage :"./assets/escrow.png",
+        title :"Escrow Amount",
+        aed :"./assets/escrow-aed.png",
+       
+    },
+    {
+        tabImage :"./assets/revenue.png",
+        title :"This Month Revenue",
+       aed :"./assets/revenue-aed.png",
+       
+    }
+]
+
+const rev = (tabContents, revenueContainer)=> {
+    const container = document.getElementById(revenueContainer);
+    let revBox = '';
+    tabContents.forEach((content)=>{
+        revBox += `<div class="rev-a">
+<div class="rev-box">
+    <div class="tab-logo">
+        <img src="${content.tabImage}" alt="active-logo">
+        <p>${content.title}</p>
+    </div>
+    <div class="tab-status">
+        <img src ="${content.aed}" alt ="stat">  
+    </div>
+</div>
+</div>`
+    })
+    container.innerHTML = revBox;
+}
+rev(revData, 'revenue-container');
 
 
 
