@@ -132,7 +132,7 @@ const revData = [
        aed :"./assets/revenue-aed.png",
        
     }
-]
+];
 
 const rev = (tabContents, revenueContainer)=> {
     const container = document.getElementById(revenueContainer);
@@ -151,7 +151,7 @@ const rev = (tabContents, revenueContainer)=> {
 </div>`
     })
     container.innerHTML = revBox;
-}
+};
 rev(revData, 'revenue-container');
 
 
